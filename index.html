@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM Bitirme Projesi</title>
+    <style>
+        * {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .navbar {
+            height: 15%;
+            background-color: skyblue;
+        }
+
+        .infos {
+            font-size: 16px;
+            margin-left: 30px;
+            width: 220px;
+            height: 100%;
+            float: left;
+        }
+
+        .name {
+            padding-top: 13px;
+            color: white;
+            font-weight: bold;
+        }
+
+        #emaillogo,
+        #phonelogo {
+            margin-right: 10px;
+        }
+
+        .pages {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            float: right;
+            margin-right: 50px;
+        }
+
+        .pages>a {
+            text-decoration: none;
+            color: white;
+            margin-left: 20px;
+            font-size: 24px;
+        }
+        .pages>a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .profile-photo {
+            float: left;
+        }
+
+        .about {
+            margin-top: 40px;
+            width: 90%;
+        }
+
+        .skill {
+            text-align: center;
+            padding-top: 40px;
+            height: 220px;
+            width: 325px;
+            margin-right: 40px;
+            box-shadow: 4px 4px 12px 4px gray;
+            float: left;
+        }
+        section>h2 {
+            margin-left: 80px;
+        }
+        section>ul>li {
+            margin-left:160px;
+        }
+
+        .recommendation {
+            padding: 10px;
+            width: 300px;
+            height: 200px;
+            text-align: center;
+            border: 1px solid black;
+            margin-right: 40px;
+            margin-bottom: 40px;
+           float:left;
+        }
+        .recommendations {
+            width: 100%;
+            float:left;
+        }
+
+        #add-btn {
+            width: 50%;
+            height: 40px;
+            background-color: transparent;
+            border: purple 1px solid;
+            color: purple;
+            border-radius: 12px;
+        }
+        .leave {
+            text-align: center;
+            height: 300px;
+            
+        }
+        #add-btn:hover {
+            cursor: pointer;
+        }
+
+        .alwaysonbottom {
+            bottom: 30px;
+            position: fixed;
+            display:flex;
+            right: 3%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <a class="alwaysonbottom" href="#"><img style="height:48px; "src="uparrow.png"></a>
+
+    <div class="navbar">
+        <div class="infos">
+            <div class="name">
+                <h1>Onat Ender</h1>
+            </div>
+            <div class="email"><img id="emaillogo" height="17px" style="float:left" src="mail.png">
+                <p>myibmproject@gmail.com</p>
+            </div>
+            <div class="phone"><img id="phonelogo" height="17px" style="float:left" src="phonelogo.png">
+                <p>+90 500 000 00 00</p>
+            </div>
+        </div>
+        <div class="pages">
+            <a href="#about-me">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#recommendations">Recommendations</a>
+        </div>
+    </div>
+
+    <section id="about-me">
+        <div class="profile-photo">
+            <img height="400px" src="profile.png">
+        </div>
+        <div class="about">
+            <h1 style="color: purple; font-size: 40px; margin-left:40px; margin-top: 30px; margin-bottom: 40px;">Hello,
+                It's Onat!</h1> <br>
+            <p style="color:gray; font-size:24px;">
+                I am a 20 years old Computer Engineering student from Turkey. Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Totam a, quasi voluptatum explicabo dolorum itaque earum, libero ipsa laudantium
+                perferendis repudiandae aut fugit sapiente impedit qui accusantium molestias similique dignissimos iste
+                eius nam eaque quidem voluptates! Quod tempore dolorum accusantium nisi? Sit ducimus provident deleniti
+                minus consequuntur magnam sequi, atque incidunt sint architecto qui beatae, cum facere, explicabo enim
+                exercitationem doloremque accusantium dicta omnis deserunt iusto laudantium. Corporis voluptatum
+                voluptatibus illum delectus quos, natus voluptas.
+            </p>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section id="skills">
+        <h1 style="color: purple; font-size: 40px; margin-left:40px; margin-top: 30px; margin-bottom: 40px;">My Skills:
+        </h1>
+        <div class="skills">
+            <div style="margin-left: 45px;" class="skill"><img height="72px" src="python.png">
+                <h2>Python</h2><br><br>
+                <p>9 months experience</p>
+            </div>
+            <div class="skill"><img height="72px" src="csharp.png">
+                <h2>C#</h2><br><br>
+                <p>15 months experience</p>
+            </div>
+            <div class="skill"><img height="72px" src="js.png">
+                <h2>Javascript</h2><br><br>
+                <p>8 months experience</p>
+            </div>
+            <div class="skill"><img height="72px" src="sql.png">
+                <h2>SQL</h2><br><br>
+                <p>7 months experience</p>
+            </div>
+            <div style="margin-left: 45px; margin-top: 20px;" class="skill"><img height="72px" src="css.png">
+                <h2>CSS</h2><br><br>
+                <p>9 months experience</p>
+            </div>
+            <div class="skill" style="margin-top: 20px; margin-bottom: 50px;"><img height="72px" src="html.png">
+                <h2>HTML</h2><br><br>
+                <p>10 months experience</p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section style="margin-left:40px; width: 660px;" id="projects">
+        <h1 style="color: purple; font-size: 40px; margin-bottom: 20px;">My Projects:</h1>
+        <br>
+        <h2>Parcel Tracking Automation</h2>
+        <ul>
+            <li>A project that makes parcel tracking very easier. I used tkinter for GUI and Selenium for data-mining.</li>
+        </ul>
+        <br>
+        <br>
+        <h2>A Twitter Clone with PHP</h2>
+        <ul>
+            <li>I wrote a Twitter Clone to improve my PHP skills.</li>
+        </ul>
+        <br>
+        <br>
+        <h2>A Wordle Clone with C# Form Application</h2>
+        <ul>
+            <li>A Wordle Game that can be played in Windows computers from a form application.</li>
+        </ul>
+    </section>
+    <br>
+    <section style="margin-left:40px;" id="recommendations">
+        <h1 style="color: purple; font-size: 40px; margin-bottom: 20px;">Recommendations:</h1>
+        <div class="recommendations">
+            <div class="recommendation">He is a very talented developer. It's nice to work with him.</div>
+            <div class="recommendation">I love this guy.</div>
+            <div class="recommendation">Good job.</div>
+            <div class="recommendation">Have a nice day.</div>
+        </div>
+        
+       <br>
+        <style>
+            .hidden {
+                display: none;
+            }
+            .message {
+                text-align: center;
+                height: 100px;
+                width: 300px;
+                background-color: pink;
+                text-align: center;
+                position: absolute;
+                padding-top: 5%;
+                align-items: center;
+                margin-left: 550px;
+                margin-top: 200px;
+            }
+            .okaybtn {
+                margin-top: 20px;
+                width: 70px;
+                background-color: white;
+                border: purple 1px solid;
+            }
+        </style>
+       <div class="message hidden">Thanks for leaving a recommendation.<br>
+
+        <button onclick='document.getElementsByClassName("message")[0].classList.add("hidden")' class="okaybtn">OKAY</button>
+       </div>
+     
+        <div class="leave" style="margin-top:50px; padding-left:370px; float:left;">
+            <h2 style="border:1px solid purple; width: 100%; height: 15%; padding-top: 10px;">Leave a Recommendation</h2> <br>
+            <textarea id="text-to-send" cols="108" rows="10"></textarea> <br> <br>
+             <button id="add-btn" style="margin-bottom: 100px;">SUBMIT</button>
+        </div>
+    </section>
+   
+</body>
+<script>
+    document.getElementById("add-btn").addEventListener('click',() => {
+        let text_to_add = document.getElementById("text-to-send").value;
+
+        if (text_to_add.trim() == "") return;
+        document.getElementById("text-to-send").value = "";
+        let new_element = document.createElement('div');
+        new_element.setAttribute('class','recommendation');
+        new_element.innerText = text_to_add;
+        document.getElementsByClassName('recommendations')[0].append(new_element);
+        document.getElementsByClassName('message')[0].classList.remove('hidden');
+        
+    });
+</script>
+
+</html>
